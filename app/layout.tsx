@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase,
     title: { default: "MEDIA CRAFT", template: "%s | MEDIA CRAFT" },
     description:
-      "Creative advertising, brand design and digital media execution by MEDIA CRAFT TECHNOLOGY LIMITED.",
+      "Creative advertising and digital media production, supported by practical creative technology and related technical services.",
     applicationName: "MEDIA CRAFT",
     icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
     openGraph: {
