@@ -1,0 +1,371 @@
+export const siteContent = {
+  en: {
+    htmlLang: "en",
+    nav: {
+      home: "Home",
+      about: "About",
+      services: "Services",
+      capabilities: "Capabilities",
+      contact: "Contact",
+      privacy: "Privacy Policy",
+      terms: "Terms of Use",
+    },
+    common: {
+      menu: "Menu",
+      close: "Close",
+      contactCta: "Start a conversation",
+      explore: "Explore our services",
+      learnMore: "Learn more",
+      viewCapabilities: "View capabilities",
+      addressLabel: "Registered office",
+      emailLabel: "Email",
+      legalLabel: "Legal",
+      rights: "All rights reserved.",
+      footerTagline:
+        "Ideas, design and digital media crafted to move brands forward.",
+    },
+    home: {
+      eyebrow: "CREATIVE ADVERTISING · DIGITAL MEDIA",
+      title: "Ideas made visible. Experiences made memorable.",
+      intro:
+        "MEDIA CRAFT brings strategy, creative direction, visual design and digital execution together to shape clear, distinctive brand experiences.",
+      artAlt: "Abstract editorial collage in the MEDIA CRAFT visual language",
+      statementKicker: "What we do",
+      statement:
+        "We turn business objectives into creative ideas, then carry those ideas across the channels and formats that matter.",
+      coreTitle: "Three connected capabilities",
+      coreIntro:
+        "A compact, collaborative model that keeps thinking, design and delivery aligned.",
+      cores: [
+        {
+          no: "01",
+          title: "Creative Strategy",
+          text: "Positioning, campaign thinking and content direction built around a clear communication goal.",
+        },
+        {
+          no: "02",
+          title: "Brand & Visual Design",
+          text: "Identity systems, campaign visuals and design languages that make brands recognisable and useful.",
+        },
+        {
+          no: "03",
+          title: "Digital Media Execution",
+          text: "Responsive websites, social content and interactive assets delivered with creative intent intact.",
+        },
+      ],
+      servicesTitle: "Services built around the work",
+      servicesIntro:
+        "Choose a focused engagement or combine services into one joined-up creative programme.",
+      processTitle: "From brief to release",
+      process: [
+        { no: "01", title: "Discover", text: "Clarify the audience, objective, context and constraints." },
+        { no: "02", title: "Define", text: "Shape the idea, message, visual direction and practical scope." },
+        { no: "03", title: "Create", text: "Design, write, prototype and refine the selected direction." },
+        { no: "04", title: "Deliver", text: "Prepare, launch and hand over assets for confident use." },
+      ],
+      whyKicker: "Why MEDIA CRAFT",
+      whyTitle: "One creative thread, from idea to execution.",
+      whyText:
+        "Our work stays close to the brief and close to production. That means fewer hand-offs, clearer decisions and a more consistent result.",
+      reasons: [
+        "Senior attention on every engagement",
+        "Flexible teams shaped around the brief",
+        "Design decisions grounded in purpose",
+        "Clear deliverables and practical handover",
+      ],
+      ctaTitle: "Have a brief, a challenge or just the beginning of an idea?",
+      ctaText: "Tell us what you are trying to move forward.",
+    },
+    services: {
+      eyebrow: "SERVICES",
+      title: "Creative services that connect the big idea to the final detail.",
+      intro:
+        "Our services are modular by design. Engage us for one specialist need or bring them together for an integrated outcome.",
+      items: [
+        { no: "01", title: "Brand Strategy & Positioning", text: "Audience framing, value proposition, messaging structure and creative foundations." },
+        { no: "02", title: "Creative Campaigns", text: "Campaign concepts, art direction, key visuals and adaptable content systems." },
+        { no: "03", title: "Visual Identity", text: "Logo application, typography, colour, layout rules and practical brand toolkits." },
+        { no: "04", title: "Content & Social Media", text: "Editorial direction, social formats, campaign copy and always-on content design." },
+        { no: "05", title: "Web & Interactive", text: "Responsive campaign pages, corporate websites and lightweight interactive experiences." },
+        { no: "06", title: "Production Support", text: "Asset adaptation, production coordination, quality control and launch-ready delivery." },
+      ],
+      noteTitle: "Built for collaboration",
+      noteText:
+        "We can work as a focused external partner or alongside your existing marketing, brand and production teams.",
+    },
+    about: {
+      eyebrow: "ABOUT",
+      title: "A creative partner for brands in motion.",
+      intro:
+        "MEDIA CRAFT TECHNOLOGY LIMITED is a creative advertising and digital media company bringing strategic clarity, visual craft and practical execution into one connected process.",
+      storyTitle: "Creative thinking that survives production",
+      storyText:
+        "Good ideas should remain strong when they move from presentation to screen, campaign, content and everyday use. We design with that full journey in mind—balancing ambition with clarity, consistency and practical delivery.",
+      valuesTitle: "How we work",
+      values: [
+        { title: "Clear before clever", text: "The idea has to communicate before it decorates." },
+        { title: "Craft with purpose", text: "Every detail should support the brand, message or experience." },
+        { title: "Open collaboration", text: "Direct dialogue and visible decisions keep work moving." },
+        { title: "Useful delivery", text: "Final assets are organised, adaptable and ready for real use." },
+      ],
+      promise:
+        "We do not inflate our story with invented awards, offices or client results. We let the clarity and quality of the work make the case.",
+    },
+    capabilities: {
+      eyebrow: "CAPABILITIES",
+      title: "What we can shape, make and deliver.",
+      intro:
+        "A practical view of our capabilities and typical deliverables—not a list of fictional case studies.",
+      groups: [
+        { title: "Think", items: ["Communication strategy", "Brand positioning", "Campaign platforms", "Content planning", "Creative workshops"] },
+        { title: "Design", items: ["Visual identity systems", "Campaign key visuals", "Editorial design", "Social templates", "Presentation design"] },
+        { title: "Make", items: ["Responsive websites", "Landing pages", "Interactive prototypes", "Motion-ready assets", "Digital content production"] },
+        { title: "Deliver", items: ["Multi-format adaptation", "Design guidelines", "Production coordination", "Quality assurance", "Organised handover"] },
+      ],
+      footerTitle: "The right shape for the brief",
+      footerText:
+        "Scope, team and deliverables are defined around the actual communication need. Technology supports the creative outcome; it does not lead the story.",
+    },
+    contact: {
+      eyebrow: "CONTACT",
+      title: "Let’s make the next idea clearer, sharper and ready to move.",
+      intro:
+        "Share a short brief, a timing question or an early-stage challenge. We will use it to start a focused conversation.",
+      detailsTitle: "Get in touch",
+      detailsText:
+        "For project enquiries, include your objective, preferred timing and the kind of support you are considering.",
+      form: {
+        name: "Name",
+        email: "Email",
+        company: "Company / organisation",
+        service: "Area of interest",
+        servicePlaceholder: "Select one",
+        services: ["Brand strategy", "Creative campaign", "Visual identity", "Content & social", "Web & interactive", "Production support", "Not sure yet"],
+        message: "Tell us about the brief",
+        consent: "I agree that my details may be used to respond to this enquiry.",
+        submit: "Send enquiry",
+        sending: "Sending…",
+        required: "Please complete the required fields and enter a valid email address.",
+        success: "Thank you. Your enquiry has been sent.",
+        mailto: "Your email app has been opened. Send the prepared message to complete your enquiry.",
+        error: "We could not send the form. Please email us directly instead.",
+      },
+    },
+    privacy: {
+      eyebrow: "PRIVACY POLICY",
+      title: "A clear approach to the information you share.",
+      updated: "Last updated: 15 July 2026",
+      sections: [
+        { title: "Information we receive", text: "When you contact us, we may receive your name, email address, organisation and the information included in your enquiry." },
+        { title: "How we use it", text: "We use enquiry information to respond, understand potential project needs, maintain appropriate business records and protect this website." },
+        { title: "Sharing and retention", text: "We do not sell personal information. We may use service providers needed to operate communications and the website, subject to appropriate safeguards. Information is kept only as long as reasonably necessary." },
+        { title: "Your choices", text: "You may ask about, correct or request deletion of information you have sent us, subject to legal and operational requirements." },
+        { title: "Contact", text: "Questions about this policy can be sent to the contact email listed on this website." },
+      ],
+    },
+    terms: {
+      eyebrow: "TERMS OF USE",
+      title: "Simple terms for using this website.",
+      updated: "Last updated: 15 July 2026",
+      sections: [
+        { title: "Website purpose", text: "This website provides general information about MEDIA CRAFT TECHNOLOGY LIMITED and its creative services. It does not constitute a binding service proposal." },
+        { title: "Intellectual property", text: "Unless stated otherwise, website content, design and original materials are owned by or licensed to MEDIA CRAFT TECHNOLOGY LIMITED. They may not be reproduced commercially without permission." },
+        { title: "Acceptable use", text: "You must not misuse the website, interfere with its operation, attempt unauthorised access or use its content in an unlawful or misleading way." },
+        { title: "Accuracy and availability", text: "We aim to keep information useful and current but do not guarantee that every item is complete or continuously available. Content may change without notice." },
+        { title: "Liability and links", text: "To the extent permitted by applicable law, we are not responsible for indirect loss arising from use of this informational website or from third-party websites it may link to." },
+        { title: "Contact", text: "Questions about these terms can be sent to the contact email listed on this website." },
+      ],
+    },
+  },
+  "zh-hk": {
+    htmlLang: "zh-Hant",
+    nav: { home: "首頁", about: "關於我們", services: "服務", capabilities: "能力", contact: "聯絡", privacy: "私隱政策", terms: "使用條款" },
+    common: { menu: "選單", close: "關閉", contactCta: "開始對話", explore: "探索服務", learnMore: "了解更多", viewCapabilities: "查看能力", addressLabel: "註冊辦事處", emailLabel: "電郵", legalLabel: "法律資訊", rights: "版權所有。", footerTagline: "以創意、設計與數碼媒體，推動品牌向前。" },
+    home: {
+      eyebrow: "創意廣告 · 數碼媒體",
+      title: "讓想法被看見，讓體驗被記住。",
+      intro: "MEDIA CRAFT 將策略、創意方向、視覺設計與數碼執行連成一體，塑造清晰而獨特的品牌體驗。",
+      artAlt: "MEDIA CRAFT 視覺語言的抽象編輯拼貼",
+      statementKicker: "我們做甚麼",
+      statement: "我們把商業目標轉化為創意概念，再把概念延伸到真正重要的渠道與內容格式。",
+      coreTitle: "三項相連的核心能力",
+      coreIntro: "以精簡、協作的模式，讓思考、設計與交付保持一致。",
+      cores: [
+        { no: "01", title: "創意策略", text: "以明確傳播目標為核心，制定品牌定位、活動概念與內容方向。" },
+        { no: "02", title: "品牌及視覺設計", text: "建立識別系統、宣傳視覺與設計語言，讓品牌更鮮明、更實用。" },
+        { no: "03", title: "數碼媒體執行", text: "製作響應式網站、社交內容與互動素材，完整保留創意意圖。" },
+      ],
+      servicesTitle: "圍繞實際工作而設的服務",
+      servicesIntro: "可選擇單項專業支援，亦可組合成連貫的創意方案。",
+      processTitle: "從簡報到發佈",
+      process: [
+        { no: "01", title: "理解", text: "釐清受眾、目標、背景與限制。" },
+        { no: "02", title: "定義", text: "建立概念、訊息、視覺方向與實際範圍。" },
+        { no: "03", title: "創作", text: "設計、撰寫、製作原型並完善選定方向。" },
+        { no: "04", title: "交付", text: "整理、發佈並移交可安心使用的素材。" },
+      ],
+      whyKicker: "為何選擇 MEDIA CRAFT",
+      whyTitle: "由想法到執行，保持同一條創意主線。",
+      whyText: "我們緊貼簡報與製作，減少交接、加快決策，令最終成果更一致。",
+      reasons: ["每個項目均有資深人員參與", "按簡報需要靈活組成團隊", "設計決策以目的為本", "交付清晰並便於實際使用"],
+      ctaTitle: "有一份簡報、一個挑戰，或只是一個想法的開始？",
+      ctaText: "告訴我們你希望推動甚麼。",
+    },
+    services: {
+      eyebrow: "服務",
+      title: "把核心創意連接到每一個執行細節。",
+      intro: "我們的服務可獨立使用，也可按需要整合，形成完整成果。",
+      items: [
+        { no: "01", title: "品牌策略及定位", text: "受眾分析、價值主張、訊息架構與創意基礎。" },
+        { no: "02", title: "創意宣傳活動", text: "活動概念、藝術指導、主視覺與可延展內容系統。" },
+        { no: "03", title: "視覺識別", text: "標誌應用、字體、色彩、版式規則與實用品牌工具。" },
+        { no: "04", title: "內容及社交媒體", text: "編輯方向、社交格式、活動文案與持續內容設計。" },
+        { no: "05", title: "網站及互動體驗", text: "響應式活動頁、企業網站與輕量互動體驗。" },
+        { no: "06", title: "製作支援", text: "素材延展、製作協調、品質控制與發佈準備。" },
+      ],
+      noteTitle: "為協作而設",
+      noteText: "我們可以作為專注的外部夥伴，也可配合你現有的市場、品牌及製作團隊。",
+    },
+    about: {
+      eyebrow: "關於我們",
+      title: "為持續前行的品牌而設的創意夥伴。",
+      intro: "MEDIA CRAFT TECHNOLOGY LIMITED 是一家創意廣告及數碼媒體公司，把策略清晰度、視覺工藝與實際執行整合於同一流程。",
+      storyTitle: "經得起製作落地的創意思考",
+      storyText: "好的想法由提案走到螢幕、活動、內容與日常應用時，仍應保持力量。我們由一開始便考慮完整旅程，在企圖、清晰度、一致性與實際交付之間取得平衡。",
+      valuesTitle: "我們的工作方式",
+      values: [
+        { title: "清晰先於炫技", text: "創意首先要有效傳達，然後才是裝飾。" },
+        { title: "工藝服務目的", text: "每個細節都應支援品牌、訊息或體驗。" },
+        { title: "開放協作", text: "直接溝通與透明決策，讓工作持續推進。" },
+        { title: "實用交付", text: "最終素材有序、可延展，並可投入實際使用。" },
+      ],
+      promise: "我們不以虛構獎項、辦事處或客戶成果誇大故事；讓工作的清晰度與品質說明一切。",
+    },
+    capabilities: {
+      eyebrow: "能力",
+      title: "我們能夠規劃、創作與交付甚麼。",
+      intro: "以下是服務能力與典型交付內容，而非虛構的客戶案例。",
+      groups: [
+        { title: "思考", items: ["傳播策略", "品牌定位", "活動主題平台", "內容規劃", "創意工作坊"] },
+        { title: "設計", items: ["視覺識別系統", "宣傳活動主視覺", "編輯設計", "社交模板", "簡報設計"] },
+        { title: "製作", items: ["響應式網站", "登陸頁", "互動原型", "動態素材準備", "數碼內容製作"] },
+        { title: "交付", items: ["多格式延展", "設計指引", "製作協調", "品質保證", "有序移交"] },
+      ],
+      footerTitle: "按簡報需要組成最合適的方式",
+      footerText: "範圍、團隊與交付內容均按真正的傳播需要制定。技術支援創意成果，而不主導品牌故事。",
+    },
+    contact: {
+      eyebrow: "聯絡",
+      title: "讓下一個想法更清晰、更銳利，並準備好向前。",
+      intro: "分享簡短需求、時間問題或早期挑戰，我們會以此展開聚焦對話。",
+      detailsTitle: "聯絡我們",
+      detailsText: "項目查詢可附上目標、期望時間及正在考慮的支援類型。",
+      form: {
+        name: "姓名", email: "電郵", company: "公司／機構", service: "感興趣的範疇", servicePlaceholder: "請選擇", services: ["品牌策略", "創意宣傳活動", "視覺識別", "內容及社交媒體", "網站及互動體驗", "製作支援", "尚未確定"], message: "簡述你的需求", consent: "我同意所提供的資料可用於回覆本次查詢。", submit: "發送查詢", sending: "正在發送…", required: "請填寫必填項目並輸入有效電郵。", success: "謝謝，你的查詢已發送。", mailto: "電郵程式已開啟，請發送預填訊息以完成查詢。", error: "表格未能發送，請直接以電郵聯絡我們。",
+      },
+    },
+    privacy: {
+      eyebrow: "私隱政策", title: "清晰處理你所分享的資料。", updated: "最後更新：2026年7月15日",
+      sections: [
+        { title: "我們收到的資料", text: "當你聯絡我們時，我們可能收到你的姓名、電郵、機構名稱及查詢中提供的資料。" },
+        { title: "資料用途", text: "我們使用查詢資料作回覆、了解潛在項目需要、保存適當業務紀錄及保護本網站。" },
+        { title: "分享與保留", text: "我們不會出售個人資料。營運通訊與網站時，或會在適當保障下使用必要的服務供應商。資料只會在合理所需期間保留。" },
+        { title: "你的選擇", text: "在法律及營運要求容許的情況下，你可查詢、更正或要求刪除曾向我們提供的資料。" },
+        { title: "聯絡", text: "如對本政策有疑問，可使用網站所列電郵聯絡我們。" },
+      ],
+    },
+    terms: {
+      eyebrow: "使用條款", title: "使用本網站的簡明條款。", updated: "最後更新：2026年7月15日",
+      sections: [
+        { title: "網站用途", text: "本網站提供 MEDIA CRAFT TECHNOLOGY LIMITED 及其創意服務的一般資料，並不構成具約束力的服務建議。" },
+        { title: "知識產權", text: "除非另有說明，網站內容、設計及原創素材由本公司擁有或獲授權使用。未經許可不得作商業複製。" },
+        { title: "可接受使用", text: "不得濫用網站、干擾運作、嘗試未經授權存取，或以違法或誤導方式使用內容。" },
+        { title: "準確性與可用性", text: "我們致力保持資料實用及更新，但不保證所有內容完整或持續可用，並可在不另行通知下更改。" },
+        { title: "責任與連結", text: "在適用法律容許範圍內，我們不對使用本資訊網站或第三方連結而引致的間接損失負責。" },
+        { title: "聯絡", text: "如對本條款有疑問，可使用網站所列電郵聯絡我們。" },
+      ],
+    },
+  },
+  "zh-cn": {
+    htmlLang: "zh-Hans",
+    nav: { home: "首页", about: "关于我们", services: "服务", capabilities: "能力", contact: "联系", privacy: "隐私政策", terms: "使用条款" },
+    common: { menu: "菜单", close: "关闭", contactCta: "开始沟通", explore: "浏览服务", learnMore: "了解更多", viewCapabilities: "查看能力", addressLabel: "注册地址", emailLabel: "邮箱", legalLabel: "法律信息", rights: "版权所有。", footerTagline: "以创意、设计与数字媒体，推动品牌向前。" },
+    home: {
+      eyebrow: "创意广告 · 数字媒体", title: "让想法被看见，让体验被记住。", intro: "MEDIA CRAFT 将策略、创意方向、视觉设计与数字执行连成一体，塑造清晰而独特的品牌体验。", artAlt: "MEDIA CRAFT 视觉语言的抽象编辑拼贴", statementKicker: "我们做什么", statement: "我们把商业目标转化为创意概念，再把概念延伸至真正重要的渠道与内容形式。", coreTitle: "三项相连的核心能力", coreIntro: "以精简、协作的模式，让思考、设计与交付保持一致。",
+      cores: [
+        { no: "01", title: "创意策略", text: "以明确传播目标为核心，制定品牌定位、活动概念与内容方向。" },
+        { no: "02", title: "品牌与视觉设计", text: "建立识别系统、活动视觉与设计语言，让品牌更鲜明、更实用。" },
+        { no: "03", title: "数字媒体执行", text: "制作响应式网站、社交内容与互动素材，完整保留创意意图。" },
+      ],
+      servicesTitle: "围绕实际工作而设的服务", servicesIntro: "可选择单项专业支持，也可组合成连贯的创意方案。", processTitle: "从简报到发布",
+      process: [
+        { no: "01", title: "理解", text: "厘清受众、目标、背景与限制。" },
+        { no: "02", title: "定义", text: "建立概念、信息、视觉方向与实际范围。" },
+        { no: "03", title: "创作", text: "设计、撰写、制作原型并完善选定方向。" },
+        { no: "04", title: "交付", text: "整理、发布并移交可放心使用的素材。" },
+      ],
+      whyKicker: "为什么选择 MEDIA CRAFT", whyTitle: "从想法到执行，保持同一条创意主线。", whyText: "我们紧贴简报与制作，减少交接、加快决策，让最终成果更一致。", reasons: ["每个项目均有资深人员参与", "按简报需要灵活组建团队", "设计决策以目的为本", "交付清晰并便于实际使用"], ctaTitle: "有一份简报、一个挑战，或只是一个想法的开始？", ctaText: "告诉我们你希望推动什么。",
+    },
+    services: {
+      eyebrow: "服务", title: "把核心创意连接到每一个执行细节。", intro: "我们的服务可独立使用，也可按需要整合，形成完整成果。",
+      items: [
+        { no: "01", title: "品牌策略与定位", text: "受众分析、价值主张、信息架构与创意基础。" },
+        { no: "02", title: "创意传播活动", text: "活动概念、艺术指导、主视觉与可延展内容系统。" },
+        { no: "03", title: "视觉识别", text: "标志应用、字体、色彩、版式规则与实用品牌工具。" },
+        { no: "04", title: "内容与社交媒体", text: "编辑方向、社交形式、活动文案与持续内容设计。" },
+        { no: "05", title: "网站与互动体验", text: "响应式活动页、企业网站与轻量互动体验。" },
+        { no: "06", title: "制作支持", text: "素材延展、制作协调、品质控制与发布准备。" },
+      ],
+      noteTitle: "为协作而设计", noteText: "我们可以作为专注的外部伙伴，也可配合你现有的市场、品牌与制作团队。",
+    },
+    about: {
+      eyebrow: "关于我们", title: "为持续前行的品牌而设的创意伙伴。", intro: "MEDIA CRAFT TECHNOLOGY LIMITED 是一家创意广告与数字媒体公司，把策略清晰度、视觉工艺与实际执行整合于同一流程。", storyTitle: "经得起制作落地的创意思考", storyText: "好的想法从提案走到屏幕、活动、内容与日常应用时，仍应保持力量。我们从一开始便考虑完整旅程，在创意、清晰度、一致性与实际交付之间取得平衡。", valuesTitle: "我们的工作方式",
+      values: [
+        { title: "清晰先于炫技", text: "创意首先要有效传达，然后才是装饰。" },
+        { title: "工艺服务于目的", text: "每个细节都应支持品牌、信息或体验。" },
+        { title: "开放协作", text: "直接沟通与透明决策，让工作持续推进。" },
+        { title: "实用交付", text: "最终素材有序、可延展，并可投入实际使用。" },
+      ],
+      promise: "我们不以虚构奖项、办公室或客户成果夸大故事；让工作的清晰度与品质说明一切。",
+    },
+    capabilities: {
+      eyebrow: "能力", title: "我们能够规划、创作与交付什么。", intro: "以下是服务能力与典型交付内容，而不是虚构的客户案例。",
+      groups: [
+        { title: "思考", items: ["传播策略", "品牌定位", "活动主题平台", "内容规划", "创意工作坊"] },
+        { title: "设计", items: ["视觉识别系统", "活动主视觉", "编辑设计", "社交模板", "演示设计"] },
+        { title: "制作", items: ["响应式网站", "着陆页", "互动原型", "动态素材准备", "数字内容制作"] },
+        { title: "交付", items: ["多格式延展", "设计指南", "制作协调", "质量保证", "有序移交"] },
+      ],
+      footerTitle: "按简报需要组成最合适的方式", footerText: "范围、团队与交付内容均按真正的传播需要制定。技术支持创意成果，而不主导品牌故事。",
+    },
+    contact: {
+      eyebrow: "联系", title: "让下一个想法更清晰、更锐利，并准备好向前。", intro: "分享简短需求、时间问题或早期挑战，我们会以此展开聚焦沟通。", detailsTitle: "联系我们", detailsText: "项目咨询可附上目标、期望时间及正在考虑的支持类型。",
+      form: {
+        name: "姓名", email: "邮箱", company: "公司／机构", service: "感兴趣的领域", servicePlaceholder: "请选择", services: ["品牌策略", "创意传播活动", "视觉识别", "内容与社交媒体", "网站与互动体验", "制作支持", "尚未确定"], message: "简述你的需求", consent: "我同意所提供的信息可用于回复本次咨询。", submit: "发送咨询", sending: "正在发送…", required: "请填写必填项并输入有效邮箱。", success: "谢谢，你的咨询已发送。", mailto: "邮件程序已打开，请发送预填信息以完成咨询。", error: "表单未能发送，请直接通过邮箱联系我们。",
+      },
+    },
+    privacy: {
+      eyebrow: "隐私政策", title: "清晰处理你所分享的信息。", updated: "最后更新：2026年7月15日",
+      sections: [
+        { title: "我们收到的信息", text: "当你联系我们时，我们可能收到你的姓名、邮箱、机构名称及咨询中提供的信息。" },
+        { title: "信息用途", text: "我们使用咨询信息作出回复、了解潜在项目需求、保存适当业务记录及保护本网站。" },
+        { title: "分享与保留", text: "我们不会出售个人信息。运营通信与网站时，可能会在适当保障下使用必要的服务供应商。信息只会在合理所需期间保留。" },
+        { title: "你的选择", text: "在法律与运营要求允许的情况下，你可查询、更正或要求删除曾向我们提供的信息。" },
+        { title: "联系", text: "如对本政策有疑问，可使用网站所列邮箱联系我们。" },
+      ],
+    },
+    terms: {
+      eyebrow: "使用条款", title: "使用本网站的简明条款。", updated: "最后更新：2026年7月15日",
+      sections: [
+        { title: "网站用途", text: "本网站提供 MEDIA CRAFT TECHNOLOGY LIMITED 及其创意服务的一般信息，并不构成具有约束力的服务建议。" },
+        { title: "知识产权", text: "除非另有说明，网站内容、设计及原创素材由本公司拥有或获授权使用。未经许可不得作商业复制。" },
+        { title: "可接受使用", text: "不得滥用网站、干扰运行、尝试未经授权访问，或以违法或误导方式使用内容。" },
+        { title: "准确性与可用性", text: "我们致力保持信息实用及更新，但不保证所有内容完整或持续可用，并可在不另行通知下更改。" },
+        { title: "责任与链接", text: "在适用法律允许范围内，我们不对使用本信息网站或第三方链接而导致的间接损失负责。" },
+        { title: "联系", text: "如对本条款有疑问，可使用网站所列邮箱联系我们。" },
+      ],
+    },
+  },
+} as const;
+
+export type SiteContent = (typeof siteContent)[keyof typeof siteContent];
