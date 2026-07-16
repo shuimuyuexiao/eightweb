@@ -42,12 +42,12 @@ function ArrowLink({
   );
 }
 
-function PageHero({ eyebrow, title, intro }: { eyebrow: string; title: string; intro: string }) {
+function PageHero({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) {
   return (
     <section className="page-hero shell">
       <p className="eyebrow hero-enter delay-1">{eyebrow}</p>
       <h1 className="page-title hero-enter delay-2">{title}</h1>
-      <p className="page-intro hero-enter delay-3">{intro}</p>
+      {intro && <p className="page-intro hero-enter delay-3">{intro}</p>}
     </section>
   );
 }
@@ -73,7 +73,7 @@ function HomePage({ locale }: { locale: Locale }) {
         </div>
         <div className="hero-art hero-enter delay-3">
           <div className="hero-art-number" aria-hidden="true">01</div>
-          <img src="/media-craft-hero.png" alt={home.artAlt} />
+          <img src="/creative-brand-hero.png" alt={home.artAlt} />
           <span className="art-tab art-tab-cyan" aria-hidden="true" />
           <span className="art-tab art-tab-lime" aria-hidden="true" />
           <p>STRATEGY / DESIGN / MEDIA</p>
@@ -267,7 +267,7 @@ function CapabilitiesPage({ locale }: { locale: Locale }) {
       <Reveal>
         <section className="capability-note">
           <div className="shell">
-            <p className="eyebrow eyebrow-light">MEDIA CRAFT MODEL</p>
+            <p className="eyebrow eyebrow-light">CREATIVE BRAND INTERACTIVE MODEL</p>
             <h2>{page.footerTitle}</h2>
             <p>{page.footerText}</p>
           </div>
@@ -294,10 +294,12 @@ function ContactPage({ locale }: { locale: Locale }) {
             <p className="meta-label">{content.common.emailLabel}</p>
             <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
           </div>
-          <div className="contact-meta">
-            <p className="meta-label">{content.common.addressLabel}</p>
-            <address>{siteConfig.address}</address>
-          </div>
+          {siteConfig.address && (
+            <div className="contact-meta">
+              <p className="meta-label">{content.common.addressLabel}</p>
+              <address>{siteConfig.address}</address>
+            </div>
+          )}
         </aside>
         <ContactForm copy={page.form} />
       </section>
@@ -309,7 +311,7 @@ function LegalPage({ locale, kind }: { locale: Locale; kind: "privacy" | "terms"
   const page = siteContent[locale][kind];
   return (
     <>
-      <PageHero eyebrow={page.eyebrow} title={page.title} intro={page.updated} />
+      <PageHero eyebrow={page.eyebrow} title={page.title} />
       <section className="legal-content shell">
         {page.sections.map((section, index) => (
           <article key={section.title}>

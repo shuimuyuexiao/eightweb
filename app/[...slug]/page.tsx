@@ -9,14 +9,20 @@ type Props = { params: Promise<{ slug: string[] }> };
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => {
-    const prefix = locale === "en" ? [] : [locale];
+  const canonicalParams = locales.flatMap((locale) => {
+    const prefix = locale === "zh-hk" ? [] : [locale];
     return pageKeys
-      .filter((page) => !(locale === "en" && page === "home"))
+      .filter((page) => !(locale === "zh-hk" && page === "home"))
       .map((page) => ({
         slug: page === "home" ? prefix : [...prefix, page],
       }));
   });
+
+  const legacyTraditionalChineseParams = pageKeys.map((page) => ({
+    slug: page === "home" ? ["zh-hk"] : ["zh-hk", page],
+  }));
+
+  return [...canonicalParams, ...legacyTraditionalChineseParams];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

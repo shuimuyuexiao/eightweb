@@ -3,6 +3,7 @@ import { Locale, PageKey, pagePath, siteConfig } from "@/config/site";
 import { SiteContent } from "@/content/site-content";
 
 const primaryPages: PageKey[] = ["about", "services", "capabilities", "contact"];
+const footerPages: PageKey[] = ["home", ...primaryPages];
 
 export function Header({
   locale,
@@ -23,8 +24,10 @@ export function Header({
     <header className="site-header">
       <div className="header-inner">
         <Link className="wordmark" href={pagePath(locale, "home")}>
-          <span className="wordmark-main">MEDIA</span>
-          <span className="wordmark-main">CRAFT</span>
+          <span className="wordmark-copy">
+            <span>CREATIVE BRAND</span>
+            <span>INTERACTIVE</span>
+          </span>
           <span className="wordmark-dot" aria-hidden="true" />
         </Link>
 
@@ -90,17 +93,27 @@ export function Footer({
     <footer className="site-footer">
       <div className="footer-top">
         <div>
-          <p className="footer-wordmark">MEDIA<br />CRAFT<span>.</span></p>
+          <p className="footer-wordmark">CREATIVE<br />BRAND<br /><span>INTERACTIVE.</span></p>
           <p className="footer-tagline">{content.common.footerTagline}</p>
+        </div>
+        <div className="footer-quick-links">
+          <p className="meta-label">{content.common.quickLinksLabel}</p>
+          <nav aria-label={content.common.quickLinksLabel}>
+            {footerPages.map((page) => (
+              <Link key={page} href={pagePath(locale, page)}>{content.nav[page]}</Link>
+            ))}
+          </nav>
         </div>
         <div className="footer-contact">
           <p className="meta-label">{content.common.emailLabel}</p>
           <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
         </div>
-        <div className="footer-address">
-          <p className="meta-label">{content.common.addressLabel}</p>
-          <address>{siteConfig.address}</address>
-        </div>
+        {siteConfig.address && (
+          <div className="footer-address">
+            <p className="meta-label">{content.common.addressLabel}</p>
+            <address>{siteConfig.address}</address>
+          </div>
+        )}
       </div>
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} {siteConfig.name}. {content.common.rights}</p>

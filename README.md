@@ -1,4 +1,4 @@
-# MEDIA CRAFT TECHNOLOGY LIMITED — Official Website
+# CREATIVE BRAND INTERACTIVE LIMITED — Official Website
 
 A responsive, trilingual corporate website for a creative advertising and digital media company. The visual direction is editorial, bold and brand-led, while the content keeps technology in a supporting role.
 

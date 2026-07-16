@@ -4,19 +4,19 @@ import { siteConfig } from "@/config/site";
 import { siteContent } from "@/content/site-content";
 
 export const metadata: Metadata = {
-  title: "MEDIA CRAFT — Creative Advertising & Digital Media",
-  description: siteContent.en.home.intro,
+  title: "CREATIVE BRAND INTERACTIVE — 創意廣告及互動媒體",
+  description: siteContent["zh-hk"].home.intro,
   alternates: {
     canonical: "/",
-    languages: { en: "/", "zh-Hant": "/zh-hk", "zh-Hans": "/zh-cn" },
+    languages: { en: "/en", "zh-Hant": "/", "zh-Hans": "/zh-cn" },
   },
   openGraph: {
-    title: "MEDIA CRAFT — Creative Advertising & Digital Media",
-    description: siteContent.en.home.intro,
+    title: "CREATIVE BRAND INTERACTIVE — 創意廣告及互動媒體",
+    description: siteContent["zh-hk"].home.intro,
     url: siteConfig.siteUrl,
   },
 };
 
 export default function Home() {
-  return <SitePage locale="en" page="home" />;
+  return <SitePage locale="zh-hk" page="home" />;
 }

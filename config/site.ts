@@ -1,4 +1,4 @@
-export const locales = ["en", "zh-hk", "zh-cn"] as const;
+export const locales = ["zh-hk", "en", "zh-cn"] as const;
 export type Locale = (typeof locales)[number];
 
 export const pageKeys = [
@@ -13,19 +13,18 @@ export const pageKeys = [
 export type PageKey = (typeof pageKeys)[number];
 
 export const siteConfig = {
-  name: "MEDIA CRAFT TECHNOLOGY LIMITED",
-  shortName: "MEDIA CRAFT",
-  email: "contact@mediacrafttech.com",
-  address:
-    "UNIT 01, 13/F, THE GOLD & SILVER COMMERCIAL BUILDING, NOS. 12–18 MERCER STREET, SHEUNG WAN, HONG KONG",
+  name: "CREATIVE BRAND INTERACTIVE LIMITED",
+  shortName: "CREATIVE BRAND INTERACTIVE",
+  email: "contact@creativebrandinteractive.com",
+  address: process.env.NEXT_PUBLIC_REGISTERED_OFFICE?.trim() ?? "",
   siteUrl:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-    "https://mediacrafttech.com",
+    "https://www.creativebrandinteractive.com",
 } as const;
 
 const localePrefix: Record<Locale, string> = {
-  en: "",
-  "zh-hk": "/zh-hk",
+  en: "/en",
+  "zh-hk": "",
   "zh-cn": "/zh-cn",
 };
 
@@ -38,10 +37,10 @@ export function parseSlug(slug: string[] = []): {
   locale: Locale;
   page: PageKey;
 } | null {
-  let locale: Locale = "en";
+  let locale: Locale = "zh-hk";
   let pagePart = slug[0];
 
-  if (pagePart === "zh-hk" || pagePart === "zh-cn") {
+  if (pagePart === "en" || pagePart === "zh-hk" || pagePart === "zh-cn") {
     locale = pagePart;
     pagePart = slug[1];
     if (slug.length > 2) return null;

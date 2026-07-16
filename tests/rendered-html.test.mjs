@@ -15,13 +15,13 @@ async function render(pathname = "/") {
   );
 }
 
-test("renders the MEDIA CRAFT homepage", async () => {
+test("renders the CREATIVE BRAND INTERACTIVE homepage", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /MEDIA CRAFT/);
-  assert.match(html, /Ideas made visible/);
-  assert.match(html, /Creative Strategy/);
+  assert.match(html, /CREATIVE BRAND INTERACTIVE/);
+  assert.match(html, /讓想法被看見/);
+  assert.match(html, /創意策略/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
 
